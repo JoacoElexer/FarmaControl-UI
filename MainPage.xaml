@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:Views="clr-namespace:FarmaControl_UI.Views"
-             x:Class="FarmaControl_UI.MainPage">
+             x:Class="FarmaControl_UI.MainPage"
+             Shell.NavBarIsVisible="False">
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
             <GradientStop Color="#668AE4" Offset="0.4"/>
@@ -16,22 +17,26 @@
     
     <ContentPage.Content>
         <VerticalStackLayout>
-            <Grid Padding="16" BackgroundColor="#2722B4" HeightRequest="95">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
+            <Grid RowDefinitions="Auto, *">
+                <Grid Padding="16" BackgroundColor="#2722B4" HeightRequest="95">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
 
-                <Image Source="purelogowhite.png" HeightRequest="73" VerticalOptions="Center"/>
-                <Image Source="logolabelwhite.png" HeightRequest="29" VerticalOptions="Center"/>
-                <Image Source="list.png" HeightRequest="36" VerticalOptions="Center"/>
+                    <Image Grid.Column="0" Source="pure_logo_white.png" HeightRequest="73" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    <Image Grid.Column="1" Source="logo_label_white.png" HeightRequest="29" VerticalOptions="Center" HorizontalOptions="Start" Margin="10, 0, 0, 0"/>
+                    <Image Grid.Column="2" Source="list_white.png" HeightRequest="36" VerticalOptions="Center"/>
+                </Grid>
+                <ScrollView Grid.Row="1">
+                    <VerticalStackLayout>
+                    <!-- Vistas de modulos -->
+                    <Views:LoginModule Margin="0, 125, 0, 0"/>
+                    <!-- Vistas de modulos -->
+                    </VerticalStackLayout>
+                </ScrollView>
             </Grid>
-            <ScrollView>
-                <!-- Vistas de modulos -->
-                <Views:LoginModule/>
-                <!-- Vistas de modulos -->
-            </ScrollView>
         </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>

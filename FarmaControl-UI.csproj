@@ -59,7 +59,7 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 
 		<!-- Custom css Styles -->
-		<MauiCss Include="Resources\Styles\styles.css" />
+		<!-- <MauiCss Include="Resources\Styles\styles.css" /> -->
 	</ItemGroup>
 
 	<ItemGroup>
