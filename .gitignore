@@ -1,0 +1,41 @@
+﻿# Archivos y carpetas generadas por compilación
+bin/
+obj/
+
+# Archivos de configuración del usuario
+*.user
+*.userosscache
+*.suo
+*.DS_Store
+
+# Archivos de log y temporales
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+*.pdb
+
+# Archivos de respaldo
+*~
+*.bak
+
+# Configuración de IDE (Visual Studio)
+.vs/
+.vscode/
+.idea/
+
+# Archivos de paquetes y caché
+packages/
+.nuget/
+*.nupkg
+
+# Salida de compilación de MAUI para cada plataforma
+**/Platforms/Android/*.apk
+**/Platforms/Android/*.apks
+**/Platforms/Android/*.aab
+**/Platforms/iOS/obj/
+**/Platforms/iOS/bin/
+**/Platforms/MacCatalyst/obj/
+**/Platforms/MacCatalyst/bin/
+**/Platforms/Windows/obj/
+**/Platforms/Windows**
