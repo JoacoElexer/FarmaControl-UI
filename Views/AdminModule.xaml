@@ -5,7 +5,7 @@
     <ContentView.Resources>
         <ResourceDictionary>
             <Style x:Key="CardBorderStyle" TargetType="Border">
-                <Setter Property="Background" Value="#000000" />
+                <Setter Property="Background" Value="#FF2B2B33" />
                 <Setter Property="StrokeShape">
                     <Setter.Value>
                         <RoundRectangle CornerRadius="10" />
@@ -38,12 +38,12 @@
     </ContentView.Resources>
 
     <Grid Margin="0,50,0,0">
-        <Border BackgroundColor="#E0E0E0"
-            Margin="10,0,10,10"
-            Padding="0"
-            HorizontalOptions="Fill"
-            VerticalOptions="Fill"
-            ZIndex="0">
+        <Border BackgroundColor="#662B2B33"
+                Margin="10,0,10,10"
+                Padding="0"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                ZIndex="0">
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="25" />
             </Border.StrokeShape>
@@ -104,7 +104,7 @@
                 <Border Style="{StaticResource CardBorderStyle}">
                     <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
                         <Label Grid.Column="0" Text="Productos" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center"/>
-                        <Image Grid.Column="1" Source="list.png" Style="{StaticResource CardIconStyle}" />
+                        <Image Grid.Column="1" Source="list_white.png" Style="{StaticResource CardIconStyle}" />
                     </Grid>
                     <Border.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding IrAProductosCommand}" />
