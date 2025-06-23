@@ -6,14 +6,7 @@
     <ContentView.Resources>
         <ResourceDictionary>
             <Style x:Key="CardBorderStyle" TargetType="Border">
-                <Setter Property="Background">
-                    <Setter.Value>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                            <GradientStop Color="#4A5C7F" Offset="0.0" />
-                            <GradientStop Color="#3B4B69" Offset="1.0" />
-                        </LinearGradientBrush>
-                    </Setter.Value>
-                </Setter>
+                <Setter Property="Background" Value="#000000" />
                 <Setter Property="StrokeShape">
                     <Setter.Value>
                         <RoundRectangle CornerRadius="10" />
@@ -45,22 +38,23 @@
         </ResourceDictionary>
     </ContentView.Resources>
 
-    <Grid>
+    <Grid Margin="0,50,0,0">
         <Border BackgroundColor="#E0E0E0"
-                Margin="0"                Padding="0"
+                Margin="10,0,10,10"
+                Padding="0"
                 HorizontalOptions="Fill"
                 VerticalOptions="Fill"
                 ZIndex="0">
             <Border.StrokeShape>
-                <RoundRectangle CornerRadius="25,25,0,0" />
+                <RoundRectangle CornerRadius="25" />
             </Border.StrokeShape>
         </Border>
 
         <ScrollView ZIndex="1">
-            <VerticalStackLayout Padding="20,40,20,8" Spacing="8">
+            <VerticalStackLayout Padding="20,20,20,20" Spacing="8">
                 <Border Style="{StaticResource CardBorderStyle}">
                     <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
-                        <Label Grid.Column="0" Text="Usuarios" Style="{StaticResource CardTextStyle}" />
+                        <Label Grid.Column="0" Text="Usuarios" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center" />
                         <Image Grid.Column="1" Source="users.png" Style="{StaticResource CardIconStyle}" />
                     </Grid>
                     <Border.GestureRecognizers>
@@ -70,7 +64,7 @@
 
                 <Border Style="{StaticResource CardBorderStyle}">
                     <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
-                        <Label Grid.Column="0" Text="Clientes" Style="{StaticResource CardTextStyle}" />
+                        <Label Grid.Column="0" Text="Clientes" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center"/>
                         <Image Grid.Column="1" Source="clients.png" Style="{StaticResource CardIconStyle}" />
                     </Grid>
                     <Border.GestureRecognizers>
@@ -80,7 +74,7 @@
 
                 <Border Style="{StaticResource CardBorderStyle}">
                     <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
-                        <Label Grid.Column="0" Text="Proveedores" Style="{StaticResource CardTextStyle}" />
+                        <Label Grid.Column="0" Text="Proveedores" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center"/>
                         <Image Grid.Column="1" Source="providers.png" Style="{StaticResource CardIconStyle}" />
                     </Grid>
                     <Border.GestureRecognizers>
@@ -90,7 +84,7 @@
 
                 <Border Style="{StaticResource CardBorderStyle}">
                     <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
-                        <Label Grid.Column="0" Text="Compras" Style="{StaticResource CardTextStyle}" />
+                        <Label Grid.Column="0" Text="Compras" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center"/>
                         <Image Grid.Column="1" Source="bag.png" Style="{StaticResource CardIconStyle}" />
                     </Grid>
                     <Border.GestureRecognizers>
@@ -100,7 +94,7 @@
 
                 <Border Style="{StaticResource CardBorderStyle}">
                     <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
-                        <Label Grid.Column="0" Text="Ventas" Style="{StaticResource CardTextStyle}" />
+                        <Label Grid.Column="0" Text="Ventas" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center"/>
                         <Image Grid.Column="1" Source="receipt.png" Style="{StaticResource CardIconStyle}" />
                     </Grid>
                     <Border.GestureRecognizers>
@@ -110,7 +104,7 @@
 
                 <Border Style="{StaticResource CardBorderStyle}">
                     <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
-                        <Label Grid.Column="0" Text="Productos" Style="{StaticResource CardTextStyle}" />
+                        <Label Grid.Column="0" Text="Productos" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center"/>
                         <Image Grid.Column="1" Source="list.png" Style="{StaticResource CardIconStyle}" />
                     </Grid>
                     <Border.GestureRecognizers>
@@ -120,7 +114,7 @@
 
                 <Border Style="{StaticResource CardBorderStyle}">
                     <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
-                        <Label Grid.Column="0" Text="Reportes" Style="{StaticResource CardTextStyle}" />
+                        <Label Grid.Column="0" Text="Reportes" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center"/>
                         <Image Grid.Column="1" Source="reports.png" Style="{StaticResource CardIconStyle}" />
                     </Grid>
                     <Border.GestureRecognizers>
