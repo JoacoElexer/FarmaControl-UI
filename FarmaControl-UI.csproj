@@ -71,6 +71,12 @@
 	  <MauiXaml Update="Views\AdminModule.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\CashierModule.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\FarmaceuticModule.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\LoginModule.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

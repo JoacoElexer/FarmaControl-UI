@@ -5,7 +5,10 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
-
+            <!-- IMPORTANTE -->
+            <!-- Insertar codigo para interfaz apegandose al diseño de figma -->
+            
+            
             <Label Text="Panel del Administrador"
                    FontSize="24"
                    FontAttributes="Bold"
