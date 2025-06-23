@@ -9,12 +9,14 @@
         Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
+        Route="LoginModule" 
+        ContentTemplate="{DataTemplate views:LoginModule}" 
+        Shell.NavBarIsVisible="False" />
+    <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-    <ShellContent
-        Route="LoginModule" 
-        ContentTemplate="{DataTemplate views:LoginModule}" />
+    
     <ShellContent
         Route="AdminModule" 
         ContentTemplate="{DataTemplate views:AdminModule}" />

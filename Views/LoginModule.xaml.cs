@@ -3,7 +3,7 @@ using Microsoft.Maui.Controls;
 
 namespace FarmaControl_UI.Views;
 
-public partial class LoginModule : ContentPage
+public partial class LoginModule : ContentView
 {
     public LoginModule()
     {
