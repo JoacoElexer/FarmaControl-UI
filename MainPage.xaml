@@ -14,7 +14,7 @@
     <ContentPage.Resources>
         <StyleSheet Source="Resources/Styles/styles.css"/>
     </ContentPage.Resources>
-    
+
     <ContentPage.Content>
         <VerticalStackLayout>
             <Grid RowDefinitions="Auto, *">
