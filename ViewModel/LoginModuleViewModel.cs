@@ -17,7 +17,7 @@ namespace FarmaControl_App.ViewModel
         {
             try
             {
-                string url = $"http://localhost:3000/api/usuarios?email={correo}&contrasenia={password}";
+                string url = "http://localhost:3000/api/usuarios";
 
                 HttpResponseMessage respuesta = await cliente.GetAsync(url);
 
@@ -30,7 +30,7 @@ namespace FarmaControl_App.ViewModel
                     if (listaUsuarios == null) return false;
 
                     var usuarioEncontrado = listaUsuarios.FirstOrDefault(u =>
-                        u.Email == correo && u.Contrasenia == password);
+                        u.email == correo && u.contrasenia == password);
 
                     return usuarioEncontrado != null;
                 }

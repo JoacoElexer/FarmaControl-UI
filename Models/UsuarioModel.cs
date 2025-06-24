@@ -8,11 +8,11 @@ namespace FarmaControl_App.Models
 {
     class UsuarioModel
     {
-        public int Id { get; set; }
-        public string Usuario { get; set; }
-        public string Contrasenia { get; set; }
-        public string Nombre_Completo { get; set; }
-        public string Email { get; set; }
-        public string Rol { get; set; }
+        public int id { get; set; }
+        public string usuario { get; set; }
+        public string contrasenia { get; set; }
+        public string nombre_Completo { get; set; }
+        public string email { get; set; }
+        public string rol { get; set; }
     }
 }
