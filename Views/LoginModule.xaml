@@ -22,7 +22,7 @@
                     HasShadow="False"
                     HeightRequest="40"
                     Padding="0">
-                    <Entry Placeholder="Ingresa tu Email" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Entry x:email Placeholder="Ingresa tu Email" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
                 </Frame>
             </VerticalStackLayout>
             <VerticalStackLayout
@@ -34,7 +34,7 @@
                     HasShadow="False"
                     HeightRequest="40"
                     Padding="0">
-                    <Entry Placeholder="Ingresa tu Contraseña" IsPassword="True" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Entry x:contrasenia Placeholder="Ingresa tu Contraseña" IsPassword="True" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
                 </Frame>
             </VerticalStackLayout>
             <VerticalStackLayout
@@ -42,7 +42,8 @@
                 <Button Text="Acceder"
                         BackgroundColor="#2558D9"
                         TextColor="White"
-                        FontSize="20"/>
+                        FontSize="20"
+                        Clicked="loginClicked"/>
             </VerticalStackLayout>
         </VerticalStackLayout>
     </Frame>

@@ -29,9 +29,9 @@
                     <VerticalStackLayout>
                         <!-- Vistas de modulos -->
                         <!--Views:LoginModule Margin="0, 125, 0, 0"/-->
-                        <Views:AdminModule Margin="0, -35, 0, 0"/>
+                        <!--Views:AdminModule Margin="0, -35, 0, 0"/-->
                         <!--Views:ProviderModule Margin="0, 0, 0, 0"/-->
-                        <!--Views:UserModule Margin="0, 0, 0, 0"/-->
+                        <Views:UserModule Margin="0, 0, 0, 0"/>
                         <!-- Vistas de modulos -->
                     </VerticalStackLayout>
                 </ScrollView>
