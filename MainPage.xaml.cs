@@ -20,5 +20,15 @@ namespace FarmaControl_App
         {
             Vista.Content = new AdminModule();
         }
+
+        public void CargarCashier()
+        {
+            Vista.Content = new CashierModule();
+        }
+
+        public void CargarFarmaceutic()
+        {
+            Vista.Content = new FarmaceuticModule();
+        }
     }
 }

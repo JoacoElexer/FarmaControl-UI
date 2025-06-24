@@ -16,14 +16,28 @@ public partial class LoginModule : ContentView
         string correo = email.Text;
         string password = contrasenia.Text;
 
-        bool loginExitoso = await viewModel.VerificarLogin(correo, password);
+        var usuario = await viewModel.VerificarLogin(correo, password);
 
-        if (loginExitoso)
+        if(usuario != null)
         {
-            await Application.Current.MainPage.DisplayAlert("Éxito", "Acceso concedido", "OK");
-            mainPage.CargarAdmin();
-        }
-        else
+            await Application.Current.MainPage.DisplayAlert("Éxito", $"Bienvenido {usuario.nombre_Completo}", "OK");
+            
+            switch (usuario.rol.ToLower())
+            {
+                case "administrador":
+                    mainPage.CargarAdmin();
+                    break;
+                case "cajero":
+                    mainPage.CargarCashier();
+                    break;
+                case "farmacéutico":
+                    mainPage.CargarFarmaceutic();
+                    break;
+                default:
+                    await Application.Current.MainPage.DisplayAlert("Error", "Rol no reconocido", "OK");
+                    break;
+            }
+        }else
         {
             await Application.Current.MainPage.DisplayAlert("Error", "Credenciales incorrectas", "OK");
         }
