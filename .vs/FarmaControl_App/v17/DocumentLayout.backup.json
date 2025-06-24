@@ -4,6 +4,10 @@
   "Documents": [
     {
 <<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\views\\cashiermodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\cashiermodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,6 +26,17 @@
     {
       "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\viewmodel\\loginmoduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:viewmodel\\loginmoduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\views\\loginmodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\loginmodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\views\\loginmodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\loginmodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
 =======
       "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\users\\hecto\\source\\repos\\farmacontrol-ui\\views\\usermodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\usermodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
@@ -40,37 +55,21 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\users\\hecto\\source\\repos\\farmacontrol-ui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> fe0565b67bf210932ddd0238edd5c9c7822488f5
       "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\users\\hecto\\source\\repos\\farmacontrol-ui\\views\\adminmodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\adminmodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> fe0565b67bf210932ddd0238edd5c9c7822488f5
     },
     {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\views\\adminmodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+=======
       "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\users\\hecto\\source\\repos\\farmacontrol-ui\\views\\loginmodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\loginmodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\views\\loginmodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\loginmodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\views\\adminmodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\adminmodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\views\\adminmodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-=======
       "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\users\\hecto\\source\\repos\\farmacontrol-ui\\views\\adminmodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
 >>>>>>> fe0565b67bf210932ddd0238edd5c9c7822488f5
       "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\adminmodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
@@ -94,11 +93,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 2,
-=======
           "SelectedChildIndex": 7,
->>>>>>> fe0565b67bf210932ddd0238edd5c9c7822488f5
           "Children": [
             {
               "$type": "Bookmark",
@@ -157,8 +152,8 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
 <<<<<<< HEAD
+              "DocumentIndex": 1,
               "Title": "CashierModule.xaml.cs",
               "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\Views\\CashierModule.xaml.cs",
               "RelativeDocumentMoniker": "Views\\CashierModule.xaml.cs",
@@ -171,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Services\\UserService.cs",
@@ -184,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserViewModel.cs",
               "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\ViewModel\\UserViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\UserViewModel.cs",
@@ -197,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoginModuleViewModel.cs",
               "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\ViewModel\\LoginModuleViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\LoginModuleViewModel.cs",
@@ -210,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UserModule.xaml.cs",
               "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\Views\\UserModule.xaml.cs",
               "RelativeDocumentMoniker": "Views\\UserModule.xaml.cs",
@@ -223,16 +218,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\MainPage.xaml",
               "RelativeDocumentMoniker": "MainPage.xaml",
               "ToolTip": "C:\\CSharpProjects\\FarmaControl_App\\MainPage.xaml",
               "RelativeToolTip": "MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-24T22:34:18.246Z",
 =======
+              "DocumentIndex": 0,
               "Title": "UserModule.xaml",
               "DocumentMoniker": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\Views\\UserModule.xaml",
               "RelativeDocumentMoniker": "Views\\UserModule.xaml",
@@ -247,7 +243,7 @@
             {
               "$type": "Document",
 <<<<<<< HEAD
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
 =======
               "DocumentIndex": 9,
 >>>>>>> fe0565b67bf210932ddd0238edd5c9c7822488f5
@@ -296,11 +292,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 5,
-=======
               "DocumentIndex": 6,
->>>>>>> fe0565b67bf210932ddd0238edd5c9c7822488f5
               "Title": "LoginModule.xaml.cs",
               "DocumentMoniker": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\Views\\LoginModule.xaml.cs",
               "RelativeDocumentMoniker": "Views\\LoginModule.xaml.cs",
@@ -312,11 +304,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 11,
-=======
               "DocumentIndex": 8,
->>>>>>> fe0565b67bf210932ddd0238edd5c9c7822488f5
               "Title": "AdminModuleViewModel.cs",
               "DocumentMoniker": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\ViewModel\\AdminModuleViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\AdminModuleViewModel.cs",
@@ -329,6 +317,19 @@
             {
               "$type": "Document",
 <<<<<<< HEAD
+              "DocumentIndex": 11,
+              "Title": "AdminModuleViewModel.cs",
+              "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\ViewModel\\AdminModuleViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\AdminModuleViewModel.cs",
+              "ToolTip": "C:\\CSharpProjects\\FarmaControl_App\\ViewModel\\AdminModuleViewModel.cs",
+              "RelativeToolTip": "ViewModel\\AdminModuleViewModel.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswB0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T21:57:34.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
 =======
               "DocumentIndex": 4,
@@ -338,11 +339,7 @@
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\MainPage.xaml.cs",
               "RelativeToolTip": "MainPage.xaml.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAAAsAAAAAAAAAAAAnwBYAAAAwAAAAAAAAAA==",
-=======
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAwAAAAAAAAAA==",
->>>>>>> fe0565b67bf210932ddd0238edd5c9c7822488f5
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T09:21:21.099Z",
               "EditorCaption": ""
