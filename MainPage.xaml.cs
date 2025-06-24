@@ -46,6 +46,17 @@ namespace FarmaControl_App
         {
             Vista.Content = new ProviderModule();
         }
+
+        public void CargarProductos()
+        {
+            Vista.Content = new ProductModule();
+        }
+
+        public void HomeButton_Clicked(object sender, EventArgs e)
+        {
+            // Regresa a la vista de inicio (LoginModule)
+            CargarLogin();
+        }
         /*
         public void CargarCompras()
         {
