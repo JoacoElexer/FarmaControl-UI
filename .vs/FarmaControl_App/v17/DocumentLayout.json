@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\",
+  "WorkspaceRootPath": "C:\\CSharpProjects\\FarmaControl_App\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\users\\hecto\\source\\repos\\farmacontrol-ui\\viewmodel\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:viewmodel\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,6 +12,15 @@
       "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\usermodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+=======
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\views\\loginmodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+>>>>>>> 08615de809585ea937dbcd6ea509ec7d5c903194
       "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\users\\hecto\\source\\repos\\farmacontrol-ui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -44,15 +54,37 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\users\\hecto\\source\\repos\\farmacontrol-ui\\views\\loginmodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 839275232c778375cccfef9ffc93d135c6d8109f
       "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\loginmodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\users\\hecto\\source\\repos\\farmacontrol-ui\\views\\adminmodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\adminmodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\views\\usermodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\usermodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\views\\cashiermodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\cashiermodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\views\\loginmodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\loginmodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\views\\adminmodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\adminmodule.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\csharpprojects\\farmacontrol_app\\views\\adminmodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:views\\adminmodule.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+=======
       "AbsoluteMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|c:\\users\\hecto\\source\\repos\\farmacontrol-ui\\viewmodel\\adminmoduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9554A0E6-9B7C-4C20-B42B-C71DDB3E0C86}|FarmaControl_App.csproj|solutionrelative:viewmodel\\adminmoduleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 839275232c778375cccfef9ffc93d135c6d8109f
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +94,18 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 7,
+=======
+<<<<<<< HEAD
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+=======
+          "SelectedChildIndex": 5,
+>>>>>>> 08615de809585ea937dbcd6ea509ec7d5c903194
           "Children": [
             {
               "$type": "Bookmark",
@@ -71,10 +114,25 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+>>>>>>> 839275232c778375cccfef9ffc93d135c6d8109f
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+<<<<<<< HEAD
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CashierModule.xaml.cs",
+              "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\Views\\CashierModule.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\CashierModule.xaml.cs",
+              "ToolTip": "C:\\CSharpProjects\\FarmaControl_App\\Views\\CashierModule.xaml.cs",
+              "RelativeToolTip": "Views\\CashierModule.xaml.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAuwDwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T22:55:15.7Z",
+=======
             },
             {
               "$type": "Document",
@@ -163,17 +221,51 @@
               "ViewState": "AgIAADYAAAAAAAAAAAAcwEkAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-24T22:48:21.814Z",
+>>>>>>> 839275232c778375cccfef9ffc93d135c6d8109f
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
+=======
+              "DocumentIndex": 2,
+<<<<<<< HEAD
+              "Title": "UserModule.xaml.cs",
+              "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\Views\\UserModule.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\UserModule.xaml.cs",
+              "ToolTip": "C:\\CSharpProjects\\FarmaControl_App\\Views\\UserModule.xaml.cs",
+              "RelativeToolTip": "Views\\UserModule.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T22:48:36.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "C:\\CSharpProjects\\FarmaControl_App\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-24T22:34:18.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+=======
+>>>>>>> 839275232c778375cccfef9ffc93d135c6d8109f
+>>>>>>> 08615de809585ea937dbcd6ea509ec7d5c903194
               "Title": "LoginModule.xaml",
-              "DocumentMoniker": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\Views\\LoginModule.xaml",
+              "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\Views\\LoginModule.xaml",
               "RelativeDocumentMoniker": "Views\\LoginModule.xaml",
-              "ToolTip": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\Views\\LoginModule.xaml",
+              "ToolTip": "C:\\CSharpProjects\\FarmaControl_App\\Views\\LoginModule.xaml",
               "RelativeToolTip": "Views\\LoginModule.xaml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-24T22:14:14.857Z",
               "EditorCaption": ""
@@ -182,9 +274,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "AdminModule.xaml",
-              "DocumentMoniker": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\Views\\AdminModule.xaml",
+              "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\Views\\AdminModule.xaml",
               "RelativeDocumentMoniker": "Views\\AdminModule.xaml",
-              "ToolTip": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\Views\\AdminModule.xaml",
+              "ToolTip": "C:\\CSharpProjects\\FarmaControl_App\\Views\\AdminModule.xaml",
               "RelativeToolTip": "Views\\AdminModule.xaml",
               "ViewState": "AgIAAC0AAAAAAAAAAAAqwDsAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -192,30 +284,43 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 6,
+=======
               "DocumentIndex": 9,
+>>>>>>> 839275232c778375cccfef9ffc93d135c6d8109f
               "Title": "AdminModule.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\Views\\AdminModule.xaml.cs",
+              "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\Views\\AdminModule.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AdminModule.xaml.cs",
-              "ToolTip": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\Views\\AdminModule.xaml.cs",
+              "ToolTip": "C:\\CSharpProjects\\FarmaControl_App\\Views\\AdminModule.xaml.cs",
               "RelativeToolTip": "Views\\AdminModule.xaml.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T22:12:12.884Z"
+              "WhenOpened": "2025-06-24T22:12:12.884Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 1,
+=======
               "DocumentIndex": 10,
+>>>>>>> 839275232c778375cccfef9ffc93d135c6d8109f
               "Title": "LoginModule.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\Views\\LoginModule.xaml.cs",
+              "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\Views\\LoginModule.xaml.cs",
               "RelativeDocumentMoniker": "Views\\LoginModule.xaml.cs",
-              "ToolTip": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\Views\\LoginModule.xaml.cs",
+              "ToolTip": "C:\\CSharpProjects\\FarmaControl_App\\Views\\LoginModule.xaml.cs",
               "RelativeToolTip": "Views\\LoginModule.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T22:10:07.011Z"
+              "WhenOpened": "2025-06-24T22:10:07.011Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 0,
+=======
               "DocumentIndex": 12,
               "Title": "AdminModuleViewModel.cs",
               "DocumentMoniker": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\ViewModel\\AdminModuleViewModel.cs",
@@ -228,13 +333,22 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
+=======
+              "DocumentIndex": 1,
+>>>>>>> 839275232c778375cccfef9ffc93d135c6d8109f
+>>>>>>> 08615de809585ea937dbcd6ea509ec7d5c903194
               "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\CSharpProjects\\FarmaControl_App\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\hecto\\source\\repos\\FarmaControl-UI\\MainPage.xaml.cs",
+              "ToolTip": "C:\\CSharpProjects\\FarmaControl_App\\MainPage.xaml.cs",
               "RelativeToolTip": "MainPage.xaml.cs",
+<<<<<<< HEAD
+              "ViewState": "AgIAAC8AAAAAAAAAAAAmwEIAAAAxAAAAAAAAAA==",
+=======
               "ViewState": "AgIAAB0AAAAAAAAAAAAIwA8AAAAUAAAAAAAAAA==",
+>>>>>>> 839275232c778375cccfef9ffc93d135c6d8109f
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T09:21:21.099Z",
               "EditorCaption": ""

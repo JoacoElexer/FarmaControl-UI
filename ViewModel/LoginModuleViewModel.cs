@@ -17,7 +17,7 @@ namespace FarmaControl_App.ViewModel
         {
             try
             {
-                string url = "http://localhost:3000/api/usuarios";
+                string url = "https://553e-207-249-176-148.ngrok-free.app/api/usuarios";
 
                 HttpResponseMessage respuesta = await cliente.GetAsync(url);
 

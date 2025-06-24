@@ -30,9 +30,9 @@ public partial class LoginModule : ContentView
                 case "cajero":
                     mainPage.CargarCashier();
                     break;
-                /*case "farmacéutico":
+                case "farmacéutico":
                     mainPage.CargarProductos();
-                    break;*/
+                    break;
                 default:
                     await Application.Current.MainPage.DisplayAlert("Error", "Rol no reconocido", "OK");
                     break;

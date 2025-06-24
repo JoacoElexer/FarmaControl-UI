@@ -21,11 +21,11 @@ namespace FarmaControl_App.Services // ¡Asegúrate de que el namespace coincida
             // Para Windows, iOS Simulator o Mac Catalyst, es 'localhost'.
             if (DeviceInfo.Platform == DevicePlatform.Android)
             {
-                _baseApiUrl = "http://10.0.2.2:3000/api/usuarios";
+                _baseApiUrl = "https://553e-207-249-176-148.ngrok-free.app/api/usuarios";
             }
             else
             {
-                _baseApiUrl = "http://localhost:3000/api/usuarios";
+                _baseApiUrl = "https://553e-207-249-176-148.ngrok-free.app/api/usuarios";
             }
         }
 

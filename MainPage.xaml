@@ -13,7 +13,9 @@
 
     <ContentPage.Content>
         <VerticalStackLayout>
-            <Grid RowDefinitions="Auto, *">
+            <Grid RowDefinitions="Auto, *"
+                  VerticalOptions="Fill"
+                  HorizontalOptions="Fill">
                 <Grid Padding="16" BackgroundColor="#2722B4" HeightRequest="95">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
