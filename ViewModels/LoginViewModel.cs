@@ -46,7 +46,7 @@ public class LoginViewModel : INotifyPropertyChanged
         {
             Mensaje = "Iniciando sesión...";
             var http = new HttpClient();
-            var response = await http.PostAsJsonAsync("http://localhost:3000/api/auth/login", new
+            var response = await http.PostAsJsonAsync("http://localhost:3000/api/usuarios", new
             {
                 email = this.Email,
                 contrasenia = this.Contrasenia
