@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+﻿
+=======
 ﻿#Archivos y carpetas generadas por compilaciónAdd commentMore actions
 bin/
 obj/
@@ -39,3 +42,4 @@ packages/
 **/Platforms/MacCatalyst/bin/
 **/Platforms/Windows/obj/
 **/Platforms/Windows**
+>>>>>>> 258b078f18a0833b3d3303e3f094d102987428cf
