@@ -13,7 +13,7 @@ namespace FarmaControl_App.ViewModel
     {
         private readonly HttpClient cliente = new HttpClient();
 
-        public async Task<bool> VerificarLogin(string correo, string password)
+        public async Task<UsuarioModel> VerificarLogin(string correo, string password)
         {
             try
             {
@@ -27,19 +27,16 @@ namespace FarmaControl_App.ViewModel
 
                     var listaUsuarios = JsonSerializer.Deserialize<List<UsuarioModel>>(json);
 
-                    if (listaUsuarios == null) return false;
-
                     var usuarioEncontrado = listaUsuarios.FirstOrDefault(u =>
                         u.email == correo && u.contrasenia == password);
 
-                    return usuarioEncontrado != null;
+                    return usuarioEncontrado;
                 }
-                return false;
+                return null;
             }
-            catch (Exception ex)
+            catch
             {
-                Console.WriteLine($"Error al verificar login: {ex.Message}");
-                return false;
+                return null;
             }
         }
     }

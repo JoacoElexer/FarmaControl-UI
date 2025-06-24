@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FarmaControl_App.Models
 {
-    class UsuarioModel
+    public class UsuarioModel
     {
         public int id { get; set; }
         public string usuario { get; set; }

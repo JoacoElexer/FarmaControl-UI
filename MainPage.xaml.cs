@@ -8,9 +8,15 @@ namespace FarmaControl_App
         public MainPage()
         {
             InitializeComponent();
+<<<<<<< HEAD
             //CargarLogin();
             CargarCashier();
+=======
+            //CargarUsuarios();
+            CargarLogin();
+>>>>>>> 258b078f18a0833b3d3303e3f094d102987428cf
         }
+
 
         public void CargarLogin()
         {
@@ -26,5 +32,22 @@ namespace FarmaControl_App
         {
             Vista.Content = new CashierModule();
         }
+<<<<<<< HEAD
+=======
+
+        public void CargarFarmaceutic()
+        {
+            Vista.Content = new FarmaceuticModule();
+        }
+        public void CargarUsuarios()
+        {
+            Vista.Content = new UserModule();
+        }
+
+        /*public void CargarProductos()
+        {
+            Vista.Content = new ProductsModule();
+        }*/
+>>>>>>> 258b078f18a0833b3d3303e3f094d102987428cf
     }
 }
