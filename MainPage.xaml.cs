@@ -8,8 +8,8 @@ namespace FarmaControl_App
         public MainPage()
         {
             InitializeComponent();
-            CargarLogin();
-            //CargarCashier();
+            //CargarLogin();
+            CargarCashier();
         }
 
         public void CargarLogin()
