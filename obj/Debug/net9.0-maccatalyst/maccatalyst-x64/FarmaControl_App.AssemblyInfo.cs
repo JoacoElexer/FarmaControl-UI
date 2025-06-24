@@ -14,11 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FarmaControl_App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+886330d655b8da5baa6074effd8664522d1bc128")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e3fdc3402e3209c376e471f2a3b4191733c3d39a")]
 [assembly: System.Reflection.AssemblyProductAttribute("FarmaControl_App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FarmaControl_App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
-[assembly: System.Runtime.Versioning.TargetPlatformAttribute("MacCatalyst18.5")]
+[assembly: System.Runtime.Versioning.TargetPlatformAttribute("MacCatalyst18.2")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("MacCatalyst15.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

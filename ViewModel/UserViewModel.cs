@@ -7,6 +7,8 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using System.Collections.ObjectModel;
 using FarmaControl_App.Models;
 using FarmaControl_App.Services;
+using CommunityToolkit.Mvvm.Input;
+using System.Windows.Input;
 
 
 namespace FarmaControl_App.ViewModels
@@ -24,6 +26,8 @@ namespace FarmaControl_App.ViewModels
 
         private UserService _userService;
 
+        public ICommand RefreshCommand { get; }
+
         public UserViewModel()
         {
             _userService = new UserService();
@@ -32,6 +36,9 @@ namespace FarmaControl_App.ViewModels
             // Inicializa _allUsers para evitar NullReferenceException al inicio si SearchText se establece antes.
             _allUsers = new ObservableCollection<User>();
             Users = new ObservableCollection<User>();
+
+            RefreshCommand = new AsyncRelayCommand(LoadUsersAsync);
+            LoadUsersAsync();
         }
 
         partial void OnSearchTextChanged(string value)
@@ -43,6 +50,8 @@ namespace FarmaControl_App.ViewModels
         {
             var userList = await _userService.GetUsersAsync(); // Obtiene los usuarios de la API
             Users = new ObservableCollection<User>(userList); // Actualiza la propiedad observable
+            var service = new UserService();
+            Users = new ObservableCollection<User>(await service.GetUsersAsync());
         }
 
         private void FilterUsers(string filter)
