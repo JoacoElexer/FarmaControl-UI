@@ -27,6 +27,13 @@
             <!-- Título -->
             <Label Text="Usuarios" FontSize="28" FontAttributes="Bold" TextColor="White" />
 
+            <!-- Botón Agregar Usuario (visible solo para admin o farmaceutico) -->
+            <Button Text="Agregar usuario"
+                    BackgroundColor="#00C853"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    IsVisible="{Binding PuedeModificar}" />
+
             <!-- Lista -->
             <CollectionView ItemsSource="{Binding Usuarios}">
                 <CollectionView.ItemTemplate>
@@ -41,6 +48,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
         </StackLayout>
     </Grid>
 </ContentPage>

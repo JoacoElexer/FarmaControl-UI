@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Net.Http.Json;
 using FarmaControl_UI.Models;
+using FarmaControl_UI.Services;
 
 namespace FarmaControl_UI.ViewModels;
 
@@ -64,14 +65,20 @@ public class UserViewModel : INotifyPropertyChanged
         var filtrados = string.IsNullOrWhiteSpace(Filtro)
             ? todosLosUsuarios
             : todosLosUsuarios.Where(u =>
-                u.User.Contains(Filtro, StringComparison.OrdinalIgnoreCase) ||
-                u.Email.Contains(Filtro, StringComparison.OrdinalIgnoreCase) ||
-                u.Rol.Contains(Filtro, StringComparison.OrdinalIgnoreCase)).ToList();
+                (u.User?.Contains(Filtro, StringComparison.OrdinalIgnoreCase) ?? false) ||
+                (u.Email?.Contains(Filtro, StringComparison.OrdinalIgnoreCase) ?? false) ||
+                (u.Rol?.Contains(Filtro, StringComparison.OrdinalIgnoreCase) ?? false) ||
+                (u.NombreCompleto?.Contains(Filtro, StringComparison.OrdinalIgnoreCase) ?? false)
+            ).ToList();
 
         Usuarios.Clear();
         foreach (var u in filtrados)
             Usuarios.Add(u);
     }
+
+    public bool PuedeModificar =>
+    UserSession.UsuarioActual?.Rol.ToLower() is "administrador" or "farmaceutico";
+
 
     public event PropertyChangedEventHandler PropertyChanged;
     void OnPropertyChanged([CallerMemberName] string name = "") =>
