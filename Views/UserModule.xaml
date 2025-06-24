@@ -32,7 +32,8 @@
                     VerticalOptions="Center"
                     Keyboard="Text"
                     ClearButtonVisibility="WhileEditing"
-                    Margin="0,0,10,0"/>
+                    Margin="0,0,10,0"
+                    Text="{Binding SearchText}"/>
                     <ImageButton Grid.Column="1"
                           Source="{FontImageSource Glyph=&#xF002;, FontFamily=FontAwesomeSolid, Color=Black}"
                           HeightRequest="24"

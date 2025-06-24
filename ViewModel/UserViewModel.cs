@@ -16,20 +16,47 @@ namespace FarmaControl_App.ViewModels
         [ObservableProperty]
         private ObservableCollection<User> users;
 
+        private ObservableCollection<User> _allUsers;
+
+        [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(Users))] // Notifica a 'Users' cuando 'SearchText' cambia
+        private string searchText;
+
         private UserService _userService;
 
         public UserViewModel()
         {
             _userService = new UserService();
             LoadUsersAsync();
+
+            // Inicializa _allUsers para evitar NullReferenceException al inicio si SearchText se establece antes.
+            _allUsers = new ObservableCollection<User>();
+            Users = new ObservableCollection<User>();
         }
 
+        partial void OnSearchTextChanged(string value)
+        {
+            FilterUsers(value);
+        }
 
-        // Método asíncrono para cargar usuarios
         private async Task LoadUsersAsync()
         {
             var userList = await _userService.GetUsersAsync(); // Obtiene los usuarios de la API
             Users = new ObservableCollection<User>(userList); // Actualiza la propiedad observable
+        }
+
+        private void FilterUsers(string filter)
+        {
+            if (string.IsNullOrWhiteSpace(filter))
+            {
+                Users = new ObservableCollection<User>(_allUsers);
+            }
+            else
+            {
+                var UsuariosFiltrados = _allUsers.Where(u =>
+                u.Username.Contains(filter, StringComparison.OrdinalIgnoreCase)).ToList();
+                Users = new ObservableCollection<User>(UsuariosFiltrados);
+            }
         }
 
         // Aquí podrías añadir comandos para añadir, editar o eliminar usuarios
