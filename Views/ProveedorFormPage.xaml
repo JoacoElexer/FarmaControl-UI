@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:FarmaControl_UI.ViewModels"
+             x:Class="FarmaControl_UI.Views.ProveedorFormPage"
+             BackgroundColor="Transparent">
+
+    <ContentPage.BindingContext>
+        <viewmodels:ProveedorFormViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20" BackgroundColor="Transparent">
+
+            <!-- Título del formulario -->
+            <Label Text="{Binding TituloFormulario}"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="White" />
+
+            <!-- Nombre de empresa -->
+            <Label Text="Nombre de la empresa:" TextColor="White" />
+            <Entry Text="{Binding Nombre_Empresa}" Placeholder="Ej. Farmacia San José" />
+
+            <!-- Email de contacto -->
+            <Label Text="Correo electrónico:" TextColor="White" />
+            <Entry Text="{Binding Email_Contacto}" Placeholder="contacto@empresa.com" Keyboard="Email" />
+
+            <!-- Teléfono -->
+            <Label Text="Teléfono:" TextColor="White" />
+            <Entry Text="{Binding Telefono}" Placeholder="Ej. 5522334455" Keyboard="Telephone" />
+
+            <!-- Dirección -->
+            <Label Text="Dirección:" TextColor="White" />
+            <Editor Text="{Binding Direccion}" Placeholder="Calle, número, ciudad..." AutoSize="TextChanges" />
+
+            <!-- Botón Guardar -->
+            <Button Text="{Binding TextoBoton}"
+                    Command="{Binding GuardarCommand}"
+                    BackgroundColor="#00C853"
+                    TextColor="White"
+                    FontAttributes="Bold" />
+
+            <!-- Mensaje de estado -->
+            <Label Text="{Binding Mensaje}"
+                   FontAttributes="Italic"
+                   FontSize="12"
+                   TextColor="White"
+                   HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

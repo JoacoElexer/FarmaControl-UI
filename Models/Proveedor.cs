@@ -11,10 +11,10 @@ namespace FarmaControl_UI.Models
         public int Id { get; set; }
         public string Nombre_Empresa { get; set; } = string.Empty;
         public string Email_Contacto { get; set; } = string.Empty;
-        public int Telefono { get; set; }
+        public string Telefono { get; set; } = string.Empty; 
         public string Direccion { get; set; } = string.Empty;
 
-        // Propiedad auxiliar para mostrar resumen en UI
         public string ContactoResumido => $"Tel: {Telefono} | {Email_Contacto}";
     }
+
 }
