@@ -32,10 +32,12 @@
                     BackgroundColor="#00C853"
                     TextColor="White"
                     FontAttributes="Bold"
-                    IsVisible="{Binding PuedeModificar}" />
+                    IsVisible="{Binding PuedeModificar}"
+                    Clicked="OnAgregarUsuarioClicked" />
 
             <!-- Lista -->
-            <CollectionView ItemsSource="{Binding Usuarios}">
+            <CollectionView ItemsSource="{Binding Usuarios}"
+                            SelectionChanged="OnUsuarioSeleccionado">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame CornerRadius="10" BackgroundColor="#668EFF" Padding="10" Margin="0,5">

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:FarmaControl_UI.ViewModels"
+             x:Class="FarmaControl_UI.Views.UserFormPage"
+             BackgroundColor="Transparent">
+
+    <ContentPage.BindingContext>
+        <viewmodels:UserFormViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20" BackgroundColor="Transparent">
+
+            <!-- Título -->
+            <Label Text="{Binding TextoBoton}" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center"
+                   TextColor="White" />
+
+            <!-- Nombre de usuario -->
+            <Label Text="Nombre Usuario:" TextColor="White"/>
+            <Entry Text="{Binding User}" Placeholder="Escribe el nombre de usuario" />
+
+            <!-- Correo electrónico -->
+            <Label Text="Correo Electrónico:" TextColor="White"/>
+            <Entry Text="{Binding Email}" Placeholder="Correo electrónico" Keyboard="Email" />
+
+            <!-- Rol -->
+            <Label Text="Rol de Usuario:" TextColor="White"/>
+            <Entry Text="{Binding Rol}" Placeholder="Ej: administrador, cajero, farmaceutico" />
+
+            <!-- Mensaje -->
+            <Label Text="{Binding Mensaje}" 
+                   TextColor="Red" 
+                   FontAttributes="Italic" 
+                   FontSize="13" 
+                   IsVisible="{Binding Mensaje, Converter={StaticResource StringToBoolConverter}}" />
+
+            <!-- Botón Guardar -->
+            <Button Text="{Binding TextoBoton}"
+                    BackgroundColor="#00C853"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Command="{Binding GuardarCommand}" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
