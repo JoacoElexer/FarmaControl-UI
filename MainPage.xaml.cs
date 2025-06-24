@@ -8,7 +8,13 @@ namespace FarmaControl_App
         public MainPage()
         {
             InitializeComponent();
-            CargarLogin();
+            CargarUsuarios();
+            //CargarLogin();
+        }
+
+        public void CargarUsuarios()
+        {
+            Vista.Content = new UserModule();
         }
 
         public void CargarLogin()

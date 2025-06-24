@@ -18,6 +18,13 @@ namespace FarmaControl_App.ViewModels
 
         private UserService _userService;
 
+        public UserViewModel()
+        {
+            _userService = new UserService();
+            LoadUsersAsync();
+        }
+
+
         // Método asíncrono para cargar usuarios
         private async Task LoadUsersAsync()
         {
