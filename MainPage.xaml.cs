@@ -8,14 +8,10 @@ namespace FarmaControl_App
         public MainPage()
         {
             InitializeComponent();
-            CargarUsuarios();
-            //CargarLogin();
+            //CargarUsuarios();
+            CargarLogin();
         }
 
-        public void CargarUsuarios()
-        {
-            Vista.Content = new UserModule();
-        }
 
         public void CargarLogin()
         {
@@ -36,5 +32,14 @@ namespace FarmaControl_App
         {
             Vista.Content = new FarmaceuticModule();
         }
+        public void CargarUsuarios()
+        {
+            Vista.Content = new UserModule();
+        }
+
+        /*public void CargarProductos()
+        {
+            Vista.Content = new ProductsModule();
+        }*/
     }
 }
