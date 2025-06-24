@@ -36,17 +36,17 @@ namespace FarmaControl_App
         {
             Vista.Content = new UserModule();
         }
-
+        /*
         public void CargarProductos()
         {
             Vista.Content = new ProductsModule();
-        }
+        }*/
 
         public void CargarProovedores()
         {
             Vista.Content = new ProviderModule();
         }
-
+        /*
         public void CargarCompras()
         {
             Vista.Content = new CompraModule();
@@ -65,6 +65,6 @@ namespace FarmaControl_App
         public void CargarReportes()
         {
             Vista.Content = new ReportesModule();
-        }
+        }*/
     }
 }
