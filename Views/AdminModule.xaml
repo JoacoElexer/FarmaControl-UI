@@ -57,7 +57,7 @@
                         <Image Grid.Column="1" Source="users.png" Style="{StaticResource CardIconStyle}" />
                     </Grid>
                     <Border.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding IrAUsuariosCommand}" />
+                        <TapGestureRecognizer Tapped="usersClicked" />
                     </Border.GestureRecognizers>
                 </Border>
 

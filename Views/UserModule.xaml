@@ -1,15 +1,21 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+<<<<<<< HEAD
              x:Class="FarmaControl_App.Views.UserModule"
              xmlns:viewmodels="clr-namespace:FarmaControl_App.ViewModels"
              xmlns:models="clr-namespace:FarmaControl_App.Models"
              BackgroundColor="Transparent">
+=======
+             xmlns:viewmodels="clr-namespace:FarmaControl_App.ViewModels"
+             xmlns:models="clr-namespace:FarmaControl_App.Models"
+             x:Class="FarmaControl_App.Views.UserModule">
+>>>>>>> 8991a21557e0bd584628ceb23cbfdd81816a1d78
 
     <ContentView.BindingContext>
         <viewmodels:UserViewModel />
     </ContentView.BindingContext>
 
+<<<<<<< HEAD
     <Frame Background="#2B2B33"
            CornerRadius="15"
            Padding="20"
@@ -52,8 +58,46 @@
                 <Label Grid.Column="2" Text="Usuario" TextColor="White" FontSize="16" HorizontalOptions="Start" Margin="0,0,0,0"/>
                 <Label Grid.Column="3" Text="Rol" TextColor="White" FontSize="16" HorizontalOptions="Start" Margin="0,0,0,0"/>
                 <Label Grid.Column="4" Text="Email" TextColor="White" FontSize="16" HorizontalOptions="Start" Margin="0,0,0,0"/>
-            </Grid>
+=======
+    <ContentView.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="Transparent" Offset="0.0" />
+            <GradientStop Color="Transparent" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentView.Background>
 
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <!-- Buscador -->
+        <Border StrokeThickness="0"
+                StrokeShape="RoundRectangle 25"
+                BackgroundColor="#E2ECFD"
+                Padding="0"
+                Margin="0,0,0,10" 
+                HeightRequest="55">
+            <Grid ColumnDefinitions="*, Auto"
+                    Padding="0">
+                <Entry x:Name="SearchBox"
+                        Grid.Column="0"
+                        Placeholder="Buscar"
+                        TextColor="Black"
+                        PlaceholderColor="Gray"
+                        BackgroundColor="Transparent"
+                        VerticalOptions="Center"
+                        FontSize="16" />
+                <ImageButton Grid.Column="1"
+                     Source="mag.png"
+                     BackgroundColor="Transparent"
+                     HeightRequest="8"
+                     WidthRequest="8"
+                     Padding="0"
+                     Margin="5,0,0,0"
+                     VerticalOptions="Center" />
+>>>>>>> 8991a21557e0bd584628ceb23cbfdd81816a1d78
+            </Grid>
+        </Border>
+
+<<<<<<< HEAD
             <CollectionView ItemsSource="{Binding Users}"
                             SelectionMode="None">
                 <CollectionView.ItemTemplate>
@@ -75,10 +119,64 @@
                                 <Label Grid.Column="3" Text="{Binding Role}" TextColor="White" FontSize="16" VerticalOptions="Center"/>
                                 <Label Grid.Column="4" Text="{Binding Email}" TextColor="White" FontSize="16" VerticalOptions="Center"/>
                             </Grid>
+=======
+
+        <!-- Título -->
+        <Label Text="Usuarios"
+               FontSize="28"
+               FontAttributes="Bold"
+               TextColor="White"
+               Margin="0,0,0,10"/>
+
+        <Button
+                Text="Recargar"
+                Command="{Binding RefreshCommand}"
+                BackgroundColor="#2B25D9"
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="40"
+                Margin="0,0,0,10"/>
+
+        <!-- Lista de usuarios -->
+        <ScrollView Orientation="Horizontal">
+            <CollectionView ItemsSource="{Binding Users}" SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:User">
+                        <Frame BackgroundColor="#2B25D9"
+                       CornerRadius="10"
+                       Padding="10"
+                       Margin="0,5"
+                       HasShadow="False">
+                            <VerticalStackLayout Spacing="10">
+                                <Grid ColumnDefinitions="Auto,*,Auto,Auto,Auto">
+                                    <Image Grid.Column="0"
+                                   Source="clients.png"
+                                   HeightRequest="40"
+                                   WidthRequest="40"
+                                   VerticalOptions="Center"
+                                   Margin="0,0,10,0" />
+                                    <Label Grid.Column="1" Text="{Binding Name}" TextColor="White" FontSize="14" VerticalOptions="Center" Padding="5"/>
+                                    <Label Grid.Column="2" Text="{Binding Username}" TextColor="White" FontSize="14" VerticalOptions="Center" Padding="0,0,30,0"/>
+                                    <Label Grid.Column="3" Text="{Binding Role}" TextColor="White" FontSize="14" VerticalOptions="Center" Padding="0,0,30,0"/>
+                                    <Label Grid.Column="4" Text="{Binding Email}" TextColor="White" FontSize="14" VerticalOptions="Center"/>
+                                </Grid>
+                                <!-- Línea divisoria -->
+                                <BoxView HeightRequest="1"
+                                 BackgroundColor="White"
+                                 Opacity="0.3"
+                                 HorizontalOptions="FillAndExpand" />
+                            </VerticalStackLayout>
+>>>>>>> 8991a21557e0bd584628ceb23cbfdd81816a1d78
                         </Frame>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+<<<<<<< HEAD
         </VerticalStackLayout>
     </Frame>
+=======
+        </ScrollView>
+
+    </VerticalStackLayout>
+>>>>>>> 8991a21557e0bd584628ceb23cbfdd81816a1d78
 </ContentView>

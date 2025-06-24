@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input; // Requiere el paquete NuGet CommunityToolkit.Mvvm
 using System.Windows.Input; // Para ICommand
 using Microsoft.Maui.Controls; // Para Shell.Current
+using FarmaControl_App.Views;
 
 namespace FarmaControl_App.ViewModels
 {
@@ -9,9 +10,9 @@ namespace FarmaControl_App.ViewModels
     public class AdminModuleViewModel
     {
         // Propiedad de comando para navegar a la página de Usuarios
-        /*public ICommand IrAUsuariosCommand { get; }
+        public ICommand IrAUsuariosCommand { get; }
         // Propiedad de comando para navegar a la página de Clientes
-        public ICommand IrAClientesCommand { get; }
+        /*public ICommand IrAClientesCommand { get; }
         // Propiedad de comando para navegar a la página de Proveedores
         public ICommand IrAProveedoresCommand { get; }
         // Propiedad de comando para navegar a la página de Compras
@@ -22,27 +23,27 @@ namespace FarmaControl_App.ViewModels
         public ICommand IrAProductosCommand { get; }
         // Propiedad de comando para navegar a la página de Reportes
         public ICommand IrAReportesCommand { get; }
-
+        */
         public AdminModuleViewModel()
         {
             // Inicialización de los comandos, cada uno llamará a un método privado de navegación
-            IrAUsuariosCommand = new RelayCommand(async () => await IrAUsuarios());
-            IrAClientesCommand = new RelayCommand(async () => await IrAClientes());
-            IrAProveedoresCommand = new RelayCommand(async () => await IrAProveedores());
-            IrAComprasCommand = new RelayCommand(async () => await IrACompras());
-            IrAVentasCommand = new RelayCommand(async () => await IrAVentas());
-            IrAProductosCommand = new RelayCommand(async () => await IrAProductos());
-            IrAReportesCommand = new RelayCommand(async () => await IrAReportes());
+            //IrAUsuariosCommand = new RelayCommand(async () => await IrAUsuarios());
+            //IrAClientesCommand = new RelayCommand(async () => await IrAClientes());
+            //IrAProveedoresCommand = new RelayCommand(async () => await IrAProveedores());
+            //IrAComprasCommand = new RelayCommand(async () => await IrACompras());
+            //IrAVentasCommand = new RelayCommand(async () => await IrAVentas());
+            //IrAProductosCommand = new RelayCommand(async () => await IrAProductos());
+            //IrAReportesCommand = new RelayCommand(async () => await IrAReportes());
         }
-
+        
         // Métodos de navegación asíncronos que utilizan Shell.Current.GoToAsync()
         // Las rutas deben estar registradas en AppShell.xaml.cs
-        private async Task IrAUsuarios()
+        /*private async Task IrAUsuarios()
         {
             // Navega a la ruta "userspage"
-            await Shell.Current.GoToAsync("userspage");
-        }
-
+            await Shell.Current.GoToAsync("UserModule");
+        }*/
+        /*
         private async Task IrAClientes()
         {
             // Navega a la ruta "clientspage"
