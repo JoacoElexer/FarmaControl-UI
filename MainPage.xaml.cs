@@ -9,6 +9,7 @@ namespace FarmaControl_App
         {
             InitializeComponent();
             CargarLogin();
+            //CargarCashier();
         }
 
         public void CargarLogin()
@@ -19,6 +20,11 @@ namespace FarmaControl_App
         public void CargarAdmin()
         {
             Vista.Content = new AdminModule();
+        }
+
+        public void CargarCashier()
+        {
+            Vista.Content = new CashierModule();
         }
     }
 }

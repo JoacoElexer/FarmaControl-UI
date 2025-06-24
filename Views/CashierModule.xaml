@@ -6,14 +6,16 @@
     <ContentView.Resources>
         <ResourceDictionary>
             <Style x:Key="CardBorderStyle" TargetType="Border">
-                <Setter Property="Background" Value="#FF2B2B33" /> <Setter Property="StrokeShape">
+                <Setter Property="Background" Value="#FF2B2B33" />
+                <Setter Property="StrokeShape">
                     <Setter.Value>
                         <RoundRectangle CornerRadius="10" />
                     </Setter.Value>
                 </Setter>
                 <Setter Property="StrokeThickness" Value="0" />
                 <Setter Property="Padding" Value="15,18,15,18" />
-                <Setter Property="Margin" Value="0,5,0,5" /> <Setter Property="Shadow">
+                <Setter Property="Margin" Value="0,5,0,5" />
+                <Setter Property="Shadow">
                     <Setter.Value>
                         <Shadow Brush="Black" Offset="5,5" Radius="10" Opacity="0.2" />
                     </Setter.Value>
@@ -33,7 +35,8 @@
             </Style>
 
             <Style x:Key="CardButtonStyle" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="#3867D6" /> <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="#3867D6" />
+                <Setter Property="TextColor" Value="White" />
                 <Setter Property="FontSize" Value="16" />
                 <Setter Property="CornerRadius" Value="8" />
                 <Setter Property="Padding" Value="10,15" />
@@ -41,7 +44,8 @@
             </Style>
 
             <Style x:Key="SecondaryButtonStyle" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="#808080" /> <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="#808080" />
+                <Setter Property="TextColor" Value="White" />
                 <Setter Property="FontSize" Value="16" />
                 <Setter Property="CornerRadius" Value="8" />
                 <Setter Property="Padding" Value="10,15" />
@@ -73,7 +77,8 @@
         </ResourceDictionary>
     </ContentView.Resources>
 
-    <VerticalStackLayout Padding="20" Spacing="8"> <Border Style="{StaticResource CardBorderStyle}">
+    <VerticalStackLayout Padding="20" Spacing="8">
+        <Border Style="{StaticResource CardBorderStyle}">
             <VerticalStackLayout Spacing="10">
                 <Label Text="Buscar Producto:" Style="{StaticResource CardTextStyle}" HorizontalOptions="Start"/>
 
@@ -92,19 +97,19 @@
             <VerticalStackLayout Spacing="10">
                 <Label Text="Carrito de Compras" Style="{StaticResource SectionHeaderStyle}" Margin="0,0,0,10"/>
 
-                <Label Text="[Lista de productos en el carrito]" TextColor="#AAAAAA" FontAttributes="Italic" HorizontalOptions="Center" Margin="0,0,0,20"/>
+                <Label x:Name="LblCartItems" Text="[Lista de productos en el carrito]" TextColor="#AAAAAA" FontAttributes="Italic" HorizontalOptions="Center" Margin="0,0,0,20"/>
 
                 <Grid ColumnDefinitions="*, Auto" Margin="0,10,0,0">
                     <Label Grid.Column="0" Text="Subtotal:" Style="{StaticResource SummaryLabelStyle}"/>
-                    <Label Grid.Column="1" Text="$0.00" Style="{StaticResource SummaryValueStyle}"/>
+                    <Label x:Name="LblSubtotal" Grid.Column="1" Text="$0.00" Style="{StaticResource SummaryValueStyle}"/>
                 </Grid>
                 <Grid ColumnDefinitions="*, Auto" Margin="0,5,0,0">
                     <Label Grid.Column="0" Text="Impuestos:" Style="{StaticResource SummaryLabelStyle}"/>
-                    <Label Grid.Column="1" Text="$0.00" Style="{StaticResource SummaryValueStyle}"/>
+                    <Label x:Name="LblImpuestos" Grid.Column="1" Text="$0.00" Style="{StaticResource SummaryValueStyle}"/>
                 </Grid>
                 <Grid ColumnDefinitions="*, Auto" Margin="0,15,0,0">
                     <Label Grid.Column="0" Text="TOTAL:" Style="{StaticResource SummaryLabelStyle}" FontAttributes="Bold" FontSize="20"/>
-                    <Label Grid.Column="1" Text="$0.00" Style="{StaticResource SummaryValueStyle}" FontAttributes="Bold" FontSize="20"/>
+                    <Label x:Name="LblTotal" Grid.Column="1" Text="$0.00" Style="{StaticResource SummaryValueStyle}" FontAttributes="Bold" FontSize="20"/>
                 </Grid>
 
                 <Button Text="Vaciar Carrito" Style="{StaticResource SecondaryButtonStyle}" Clicked="OnClearCartClicked" Margin="0,20,0,0"/>
