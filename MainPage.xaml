@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FarmaControl_App.MainPage"
+             xmlns:Views="clr-namespace:FarmaControl_App.Views"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#668AE4" Offset="0.4"/>
+            <GradientStop Color="#FFFFFF" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ContentPage.Content>
+        <VerticalStackLayout>
+            <Grid RowDefinitions="Auto, *">
+                <Grid Padding="16" BackgroundColor="#2722B4" HeightRequest="95">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Grid.Column="0" Source="pure_logo_white.png" HeightRequest="73" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    <Image Grid.Column="1" Source="logo_label_white.png" HeightRequest="29" VerticalOptions="Center" HorizontalOptions="Start" Margin="10, 0, 0, 0"/>
+                    <Image Grid.Column="2" Source="list_white.png" HeightRequest="36" VerticalOptions="Center"/>
+                </Grid>
+                <ScrollView Grid.Row="1">
+                    <VerticalStackLayout>
+                        <!-- Vistas de modulos -->
+                        <!--Views:LoginModule Margin="0, 125, 0, 0"/-->
+                        <Views:AdminModule Margin="0, -35git add ., 0, 0"/>
+                        <!--Views:ProviderModule Margin="0, 0, 0, 0"/-->
+                        <!--Views:UserModule Margin="0, 0, 0, 0"/-->
+                        <!-- Vistas de modulos -->
+                    </VerticalStackLayout>
+                </ScrollView>
+            </Grid>
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>

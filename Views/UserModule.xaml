@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FarmaControl_App.Views.UserModule">
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- Cuerpo -->
+        <StackLayout Grid.Row="1" Padding="20" Spacing="10" BackgroundColor="Transparent">
+
+            <!-- Buscador -->
+            <SearchBar Placeholder="Buscar" Text="{Binding Filtro}" />
+
+            <!-- Título -->
+            <Label Text="Usuarios" FontSize="28" FontAttributes="Bold" TextColor="White" />
+
+            <!-- Botón Agregar Usuario (visible solo para admin o farmaceutico) -->
+            <Button Text="Agregar usuario"
+                TextColor="White"
+                FontAttributes="Bold"
+                IsVisible="{Binding PuedeModificar}" />
+            <!--Clicked="OnAgregarUsuarioClicked"-->
+
+            <!-- Lista -->
+            <CollectionView ItemsSource="{Binding Usuarios}">
+                <!--SelectionChanged="OnUsuarioSeleccionado"-->
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame CornerRadius="10" BackgroundColor="#668EFF" Padding="10" Margin="0,5">
+                            <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto">
+                                <Image Source="user_icon.png" HeightRequest="40" WidthRequest="40" Grid.RowSpan="2" Margin="5"/>
+                                <Label Text="{Binding User}" FontAttributes="Bold" TextColor="White" Grid.Column="1" />
+                                <Label Text="{Binding RolYEmail}" FontSize="12" TextColor="White" Grid.Column="1" Grid.Row="1" />
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </StackLayout>
+    </Grid>
+</ContentView>

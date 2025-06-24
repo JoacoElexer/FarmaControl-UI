@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FarmaControl_App.Views.LoginModule">
+    <Frame
+        Background="#2B2B33"
+        CornerRadius="15"
+        Padding="20"
+        WidthRequest="290"
+        MaximumWidthRequest="300"
+        HasShadow="True">
+        <VerticalStackLayout>
+            <VerticalStackLayout>
+                <Label Text="Inicia Sesión" VerticalOptions="Center" HorizontalOptions="Center" FontSize="24" Padding="20"/>
+            </VerticalStackLayout>
+            <VerticalStackLayout
+                    Padding="20">
+                <Label Text="Email" VerticalOptions="Center" FontSize="14"/>
+                <Frame
+                    BackgroundColor="White"
+                    CornerRadius="10"
+                    HasShadow="False"
+                    HeightRequest="40"
+                    Padding="0">
+                    <Entry Placeholder="Ingresa tu Email" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Frame>
+            </VerticalStackLayout>
+            <VerticalStackLayout
+                    Padding="20">
+                <Label Text="Contraseña" VerticalOptions="Center" FontSize="14"/>
+                <Frame
+                    BackgroundColor="White"
+                    CornerRadius="10"
+                    HasShadow="False"
+                    HeightRequest="40"
+                    Padding="0">
+                    <Entry Placeholder="Ingresa tu Contraseña" IsPassword="True" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Frame>
+            </VerticalStackLayout>
+            <VerticalStackLayout
+                    Padding="20">
+                <Button Text="Acceder"
+                        BackgroundColor="#2558D9"
+                        TextColor="White"
+                        FontSize="20"/>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </Frame>
+</ContentView>
