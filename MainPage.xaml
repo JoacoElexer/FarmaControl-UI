@@ -23,7 +23,7 @@
 
                     <Image Grid.Column="0" Source="pure_logo_white.png" HeightRequest="73" VerticalOptions="Center" HorizontalOptions="Start"/>
                     <Image Grid.Column="1" Source="logo_label_white.png" HeightRequest="29" VerticalOptions="Center" HorizontalOptions="Start" Margin="10, 0, 0, 0"/>
-                    <Image Grid.Column="2" Source="list_white.png" HeightRequest="36" VerticalOptions="Center"/>
+                    <ImageButton Grid.Column="2" Source="home2.png" HeightRequest="36" VerticalOptions="Center" Clicked="HomeButton_Clicked"/>
                 </Grid>
                 <ScrollView Grid.Row="1">
                     <VerticalStackLayout>
