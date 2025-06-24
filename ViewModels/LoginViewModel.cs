@@ -4,6 +4,8 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Net.Http.Json;
 using FarmaControl_UI.Models;
+using Microsoft.Maui.Controls;
+using FarmaControl_UI.Views;
 
 namespace FarmaControl_UI.ViewModels;
 
@@ -42,6 +44,7 @@ public class LoginViewModel : INotifyPropertyChanged
     {
         try
         {
+            Mensaje = "Iniciando sesión...";
             var http = new HttpClient();
             var response = await http.PostAsJsonAsync("http://localhost:3000/api/auth/login", new
             {
@@ -54,8 +57,28 @@ public class LoginViewModel : INotifyPropertyChanged
                 var json = await response.Content.ReadFromJsonAsync<Usuario>();
                 Mensaje = $"Bienvenido, {json.User} ({json.Rol})";
 
-                // Aquí podrías navegar a otra página según el rol
-                // ej: Shell.Current.GoToAsync("//AdminModule");
+                string route = string.Empty;
+                switch (json.Rol.ToLower())
+                {
+                    case "administrador":
+                        route = $"//{nameof(AdminModule)}";
+                        break;
+                    case "cajero":
+                        route= $"//{nameof(CashierModule)}";
+                        break;
+                    case "farmaceutico":
+                        route = $"//{nameof(FarmaceuticModule)}";
+                        break;
+                    default:
+                        Mensaje = "Rol no reconocido.";
+                        return;
+                }
+                if (!string.IsNullOrEmpty(route))
+                {
+                    // Reinicia la pila de navegación para que el usuario no pueda volver al login con el botón Atrás
+                    await Shell.Current.GoToAsync(route, true); // 'true' para reemplazar la pila
+                    Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
+                }
             }
             else
             {
@@ -64,7 +87,14 @@ public class LoginViewModel : INotifyPropertyChanged
         }
         catch (Exception ex)
         {
-            Mensaje = "Error de conexión: " + ex.Message;
+            if(ex.Message.Contains("localhost") || ex.Message.Contains("connection refused"))
+            {
+                Mensaje = "Error de conexión: Asegurate que el servidor esté en ejecución.";
+            }
+            else
+            {
+                Mensaje = "Error de conexión: " + ex.Message;
+            }
         }
     }
 
