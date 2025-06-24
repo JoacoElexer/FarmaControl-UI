@@ -3,60 +3,125 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FarmaControl_UI.Views.AdminModule">
 
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15">
-            <!-- IMPORTANTE -->
-            <!-- Insertar codigo para interfaz apegandose al diseño de figma -->
-            
-            
-            <Label Text="Panel del Administrador"
-                   FontSize="24"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Center"
-                   Margin="0,20,0,10" />
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <Style x:Key="CardBorderStyle" TargetType="Border">
+                <Setter Property="Background" Value="#000000" />
+                <Setter Property="StrokeShape">
+                    <Setter.Value>
+                        <RoundRectangle CornerRadius="10" />
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="StrokeThickness" Value="0" />
+                <Setter Property="Padding" Value="15,18,15,18" />
+                <Setter Property="Margin" Value="0,5,0,5" />
+                <Setter Property="Shadow">
+                    <Setter.Value>
+                        <Shadow Brush="Black" Offset="5,5" Radius="10" Opacity="0.2" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
 
-            <!-- Botón: Usuarios -->
-            <Button Text="Gestión de Usuarios"
-                    Command="{Binding IrAUsuariosCommand}"
-                    BackgroundColor="#4CAF50"
-                    TextColor="White"
-                    CornerRadius="10" />
+            <Style x:Key="CardTextStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
 
-            <!-- Botón: Productos -->
-            <Button Text="Gestión de Productos"
-                    Command="{Binding IrAProductosCommand}"
-                    BackgroundColor="#2196F3"
-                    TextColor="White"
-                    CornerRadius="10" />
+            <Style x:Key="CardIconStyle" TargetType="Image">
+                <Setter Property="WidthRequest" Value="28" />
+                <Setter Property="HeightRequest" Value="28" />
+                <Setter Property="Aspect" Value="AspectFit" />
+                <Setter Property="HorizontalOptions" Value="End" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
 
-            <!-- Botón: Proveedores -->
-            <Button Text="Gestión de Proveedores"
-                    Command="{Binding IrAProveedoresCommand}"
-                    BackgroundColor="#FF9800"
-                    TextColor="White"
-                    CornerRadius="10" />
+    <Grid Margin="0,50,0,0">
+        <Border BackgroundColor="#E0E0E0"
+                Margin="10,0,10,10"
+                Padding="0"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                ZIndex="0">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="25" />
+            </Border.StrokeShape>
+        </Border>
 
-            <!-- Botón: Compras -->
-            <Button Text="Gestión de Compras"
-                    Command="{Binding IrAComprasCommand}"
-                    BackgroundColor="#9C27B0"
-                    TextColor="White"
-                    CornerRadius="10" />
+        <ScrollView ZIndex="1">
+            <VerticalStackLayout Padding="20,20,20,20" Spacing="8">
+                <Border Style="{StaticResource CardBorderStyle}">
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                        <Label Grid.Column="0" Text="Usuarios" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center" />
+                        <Image Grid.Column="1" Source="users.png" Style="{StaticResource CardIconStyle}" />
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding IrAUsuariosCommand}" />
+                    </Border.GestureRecognizers>
+                </Border>
 
-            <!-- Botón: Ventas -->
-            <Button Text="Gestión de Ventas"
-                    Command="{Binding IrAVentasCommand}"
-                    BackgroundColor="#E91E63"
-                    TextColor="White"
-                    CornerRadius="10" />
+                <Border Style="{StaticResource CardBorderStyle}">
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                        <Label Grid.Column="0" Text="Clientes" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center"/>
+                        <Image Grid.Column="1" Source="clients.png" Style="{StaticResource CardIconStyle}" />
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding IrAClientesCommand}" />
+                    </Border.GestureRecognizers>
+                </Border>
 
-            <!-- Botón: Reportes -->
-            <Button Text="Ver Reportes"
-                    Command="{Binding IrAReportesCommand}"
-                    BackgroundColor="#607D8B"
-                    TextColor="White"
-                    CornerRadius="10" />
+                <Border Style="{StaticResource CardBorderStyle}">
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                        <Label Grid.Column="0" Text="Proveedores" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center"/>
+                        <Image Grid.Column="1" Source="providers.png" Style="{StaticResource CardIconStyle}" />
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding IrAProveedoresCommand}" />
+                    </Border.GestureRecognizers>
+                </Border>
 
-        </VerticalStackLayout>
-    </ScrollView>
+                <Border Style="{StaticResource CardBorderStyle}">
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                        <Label Grid.Column="0" Text="Compras" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center"/>
+                        <Image Grid.Column="1" Source="bag.png" Style="{StaticResource CardIconStyle}" />
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding IrAComprasCommand}" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+                <Border Style="{StaticResource CardBorderStyle}">
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                        <Label Grid.Column="0" Text="Ventas" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center"/>
+                        <Image Grid.Column="1" Source="receipt.png" Style="{StaticResource CardIconStyle}" />
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding IrAVentasCommand}" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+                <Border Style="{StaticResource CardBorderStyle}">
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                        <Label Grid.Column="0" Text="Productos" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center"/>
+                        <Image Grid.Column="1" Source="list.png" Style="{StaticResource CardIconStyle}" />
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding IrAProductosCommand}" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+                <Border Style="{StaticResource CardBorderStyle}">
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                        <Label Grid.Column="0" Text="Reportes" Style="{StaticResource CardTextStyle}" HorizontalOptions="Center"/>
+                        <Image Grid.Column="1" Source="reports.png" Style="{StaticResource CardIconStyle}" />
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding IrAReportesCommand}" />
+                    </Border.GestureRecognizers>
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
 </ContentView>

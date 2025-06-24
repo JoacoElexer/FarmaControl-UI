@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Shell
-    x:Class="FarmaControl_UI.AppShell"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:FarmaControl_UI"
-    Title="FarmaControl_UI"
-    xmlns:views="clr-namespace:FarmaControl_UI.Views">
 
+<Shell x:Class="FarmaControl_UI.AppShell"
+        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        xmlns:local="clr-namespace:FarmaControl_UI"
+        Title="FarmaControl_UI"
+        xmlns:views="clr-namespace:FarmaControl_UI.Views"
+        Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Route="LoginModule" 
+        ContentTemplate="{DataTemplate views:LoginModule}" 
+        Shell.NavBarIsVisible="False" />
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-    <ShellContent
-        Route="LoginModule" 
-        ContentTemplate="{DataTemplate views:LoginModule}" />
+    
     <ShellContent
         Route="AdminModule" 
         ContentTemplate="{DataTemplate views:AdminModule}" />

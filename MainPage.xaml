@@ -31,9 +31,9 @@
                 </Grid>
                 <ScrollView Grid.Row="1">
                     <VerticalStackLayout>
-                    <!-- Vistas de modulos -->
-                    <Views:LoginModule Margin="0, 125, 0, 0"/>
-                    <!-- Vistas de modulos -->
+                        <!-- Vistas de modulos -->
+                        <!--Views:LoginModule Margin="0, 125, 0, 0"/-->
+                        <!-- Vistas de modulos -->
                     </VerticalStackLayout>
                 </ScrollView>
             </Grid>

@@ -55,6 +55,10 @@ public class LoginViewModel : INotifyPropertyChanged
             if (response.IsSuccessStatusCode)
             {
                 var json = await response.Content.ReadFromJsonAsync<Usuario>();
+
+                //Guardamos el usuario autenticado
+                UserSession.UsuarioActual = json;
+
                 Mensaje = $"Bienvenido, {json.User} ({json.Rol})";
 
                 string route = string.Empty;
@@ -64,7 +68,7 @@ public class LoginViewModel : INotifyPropertyChanged
                         route = $"//{nameof(AdminModule)}";
                         break;
                     case "cajero":
-                        route= $"//{nameof(CashierModule)}";
+                        route = $"//{nameof(CashierModule)}";
                         break;
                     case "farmaceutico":
                         route = $"//{nameof(FarmaceuticModule)}";
@@ -75,8 +79,7 @@ public class LoginViewModel : INotifyPropertyChanged
                 }
                 if (!string.IsNullOrEmpty(route))
                 {
-                    // Reinicia la pila de navegación para que el usuario no pueda volver al login con el botón Atrás
-                    await Shell.Current.GoToAsync(route, true); // 'true' para reemplazar la pila
+                    await Shell.Current.GoToAsync(route, true);
                     Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
                 }
             }
