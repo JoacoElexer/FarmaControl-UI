@@ -1,0 +1,90 @@
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:FarmaControl_App.ViewModels"
+             xmlns:models="clr-namespace:FarmaControl_App.Models"
+             x:Class="FarmaControl_App.Views.ProductModule">
+
+    <ContentView.BindingContext>
+        <viewmodels:ProductViewModel />
+    </ContentView.BindingContext>
+
+    <ContentView.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="Transparent" Offset="0.0" />
+            <GradientStop Color="Transparent" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentView.Background>
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <!-- Buscador -->
+        <Border StrokeThickness="0"
+                StrokeShape="RoundRectangle 25"
+                BackgroundColor="#E2ECFD"
+                Padding="0"
+                Margin="0,0,0,10" 
+                HeightRequest="55">
+            <Grid ColumnDefinitions="*, Auto"
+                    Padding="0">
+                <Entry x:Name="SearchBox"
+                        Grid.Column="0"
+                        Placeholder="Buscar producto"
+                        TextColor="Black"
+                        PlaceholderColor="Gray"
+                        BackgroundColor="Transparent"
+                        VerticalOptions="Center"
+                        FontSize="16" />
+                <ImageButton Grid.Column="1"
+                     Source="mag.png"
+                     BackgroundColor="Transparent"
+                     HeightRequest="8"
+                     WidthRequest="8"
+                     Padding="0"
+                     Margin="5,0,0,0"
+                     VerticalOptions="Center" />
+            </Grid>
+        </Border>
+
+        <!-- Título -->
+        <Label Text="Productos"
+               FontSize="28"
+               FontAttributes="Bold"
+               TextColor="White"
+               Margin="0,0,0,10"/>
+
+        <Button
+                Text="Recargar"
+                Command="{Binding RefreshCommand}"
+                BackgroundColor="#2B25D9"
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="40"
+                Margin="0,0,0,10"/>
+
+        <!-- Lista de productos -->
+        <CollectionView ItemsSource="{Binding Products}" SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Product">
+                    <Frame BackgroundColor="#2B25D9"
+                           CornerRadius="10"
+                           Padding="10"
+                           Margin="0,5"
+                           HasShadow="False">
+                        <VerticalStackLayout Spacing="10">
+                            <Grid ColumnDefinitions="*,Auto,Auto">
+                                <Label Grid.Column="0" Text="{Binding Name}" TextColor="White" FontSize="14" VerticalOptions="Center"/>
+                                <Label Grid.Column="1" Text="{Binding Category}" TextColor="White" FontSize="14" VerticalOptions="Center" Padding="10,0,0,0"/>
+                                <Label Grid.Column="2" Text="{Binding Price, StringFormat='${0:F2}'}" TextColor="White" FontSize="14" VerticalOptions="Center" Padding="10,0,0,0"/>
+                            </Grid>
+                            <BoxView HeightRequest="1"
+                                     BackgroundColor="White"
+                                     Opacity="0.3"
+                                     HorizontalOptions="FillAndExpand" />
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </VerticalStackLayout>
+</ContentView>

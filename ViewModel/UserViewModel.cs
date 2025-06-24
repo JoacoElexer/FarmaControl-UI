@@ -26,11 +26,8 @@ namespace FarmaControl_App.ViewModels
 
         private UserService _userService;
 
-<<<<<<< HEAD
-=======
         public ICommand RefreshCommand { get; }
 
->>>>>>> 8991a21557e0bd584628ceb23cbfdd81816a1d78
         public UserViewModel()
         {
             _userService = new UserService();
@@ -39,12 +36,9 @@ namespace FarmaControl_App.ViewModels
             // Inicializa _allUsers para evitar NullReferenceException al inicio si SearchText se establece antes.
             _allUsers = new ObservableCollection<User>();
             Users = new ObservableCollection<User>();
-<<<<<<< HEAD
-=======
 
             RefreshCommand = new AsyncRelayCommand(LoadUsersAsync);
             LoadUsersAsync();
->>>>>>> 8991a21557e0bd584628ceb23cbfdd81816a1d78
         }
 
         partial void OnSearchTextChanged(string value)
@@ -60,19 +54,6 @@ namespace FarmaControl_App.ViewModels
             Users = new ObservableCollection<User>(await service.GetUsersAsync());
         }
 
-        private void FilterUsers(string filter)
-        {
-            if (string.IsNullOrWhiteSpace(filter))
-            {
-                Users = new ObservableCollection<User>(_allUsers);
-            }
-            else
-            {
-                var UsuariosFiltrados = _allUsers.Where(u =>
-                u.Username.Contains(filter, StringComparison.OrdinalIgnoreCase)).ToList();
-                Users = new ObservableCollection<User>(UsuariosFiltrados);
-            }
-        }
 
         private void FilterUsers(string filter)
         {

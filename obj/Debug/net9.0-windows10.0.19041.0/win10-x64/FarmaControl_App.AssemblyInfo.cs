@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FarmaControl_App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8991a21557e0bd584628ceb23cbfdd81816a1d78")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+839275232c778375cccfef9ffc93d135c6d8109f")]
 [assembly: System.Reflection.AssemblyProductAttribute("FarmaControl_App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FarmaControl_App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
