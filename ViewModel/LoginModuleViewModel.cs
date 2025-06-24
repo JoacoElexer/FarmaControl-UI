@@ -17,19 +17,28 @@ namespace FarmaControl_App.ViewModel
         {
             try
             {
-                string apiUrl = $"http://localhost:3000/api/usuarios?email={correo}&contrasenia={password}";
+                string url = $"http://localhost:3000/api/usuarios?email={correo}&contrasenia={password}";
 
-                HttpResponseMessage respuesta = await cliente.GetAsync(apiUrl);
+                HttpResponseMessage respuesta = await cliente.GetAsync(url);
 
                 if (respuesta.IsSuccessStatusCode)
                 {
                     string json = await respuesta.Content.ReadAsStringAsync();
+
+                    var listaUsuarios = JsonSerializer.Deserialize<List<UsuarioModel>>(json);
+
+                    if (listaUsuarios == null) return false;
+
+                    var usuarioEncontrado = listaUsuarios.FirstOrDefault(u =>
+                        u.Email == correo && u.Contrasenia == password);
+
+                    return usuarioEncontrado != null;
                 }
                 return false;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error: {ex.Message}");
+                Console.WriteLine($"Error al verificar login: {ex.Message}");
                 return false;
             }
         }
