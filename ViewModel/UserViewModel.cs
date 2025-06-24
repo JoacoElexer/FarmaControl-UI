@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using System.Collections.ObjectModel;
 using FarmaControl_App.Models;
+using FarmaControl_App.Services;
 
 
 namespace FarmaControl_App.ViewModels
@@ -15,15 +16,22 @@ namespace FarmaControl_App.ViewModels
         [ObservableProperty]
         private ObservableCollection<User> users;
 
-        public UserViewModel()
+        private UserService _userService;
+
+        // Método asíncrono para cargar usuarios
+        private async Task LoadUsersAsync()
         {
-            Users = new ObservableCollection<User>
-            {
-                new User { Name = "Joaco", Username = "UsuarioJoaco", Role = "Admin", Email = "joaco@example.com" },
-            new User { Name = "Simon", Username = "UsuarioSimon", Role = "Editor", Email = "simon@example.com" },
-            new User { Name = "Pepe", Username = "UsuarioPepe", Role = "Viewer", Email = "pepe@example.com" }
-            };
+            var userList = await _userService.GetUsersAsync(); // Obtiene los usuarios de la API
+            Users = new ObservableCollection<User>(userList); // Actualiza la propiedad observable
         }
+
+        // Aquí podrías añadir comandos para añadir, editar o eliminar usuarios
+        // Por ejemplo:
+        // [RelayCommand]
+        // public async Task AddNewUser(User newUser) {
+        //     await _userService.SaveUserAsync(newUser);
+        //     await LoadUsersAsync(); // Recarga la lista después de añadir
+        // }
 
     }
 }
