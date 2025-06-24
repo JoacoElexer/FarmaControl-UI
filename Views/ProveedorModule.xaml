@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:FarmaControl_UI.ViewModels"
+             x:Class="FarmaControl_UI.Views.ProveedorModule"
+             BackgroundColor="Transparent">
+
+    <ContentPage.BindingContext>
+        <viewmodels:ProveedorViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- Header -->
+        <StackLayout BackgroundColor="#2125D0" Padding="15,40,15,15" Orientation="Horizontal" HorizontalOptions="Fill" VerticalOptions="Center">
+            <Image Source="logo_placeholder.png" HeightRequest="40" />
+            <Label Text="FARMACONTROL" FontSize="18" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Image Source="menu_icon.png" HeightRequest="30" />
+        </StackLayout>
+
+        <!-- Cuerpo -->
+        <StackLayout Grid.Row="1" Padding="20" Spacing="10">
+
+            <!-- Buscador -->
+            <SearchBar Placeholder="Buscar proveedor" Text="{Binding Filtro}" />
+
+            <!-- Título -->
+            <Label Text="Proveedores" FontSize="28" FontAttributes="Bold" TextColor="White" />
+
+            <!-- Botón de agregar proveedor (solo para admin) -->
+            <Button Text="Agregar proveedor"
+                    BackgroundColor="#00C853"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    IsVisible="{Binding PuedeModificar}" />
+
+            <!-- Lista -->
+            <CollectionView ItemsSource="{Binding Proveedores}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame CornerRadius="10" BackgroundColor="#668EFF" Padding="10" Margin="0,5">
+                            <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto">
+                                <Image Source="provider_icon.png" HeightRequest="40" WidthRequest="40" Grid.RowSpan="2" Margin="5"/>
+                                <Label Text="{Binding Nombre_Empresa}" FontAttributes="Bold" TextColor="White" Grid.Column="1" />
+                                <Label Text="{Binding Telefono}, {Binding Direccion}" FontSize="12" TextColor="White" Grid.Column="1" Grid.Row="1" />
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </StackLayout>
+    </Grid>
+</ContentPage>

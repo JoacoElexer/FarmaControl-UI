@@ -6,6 +6,7 @@ using System.Net.Http.Json;
 using FarmaControl_UI.Models;
 using Microsoft.Maui.Controls;
 using FarmaControl_UI.Views;
+using FarmaControl_UI.Services; // 👈 Asegúrate de agregar esto
 
 namespace FarmaControl_UI.ViewModels;
 
@@ -55,6 +56,10 @@ public class LoginViewModel : INotifyPropertyChanged
             if (response.IsSuccessStatusCode)
             {
                 var json = await response.Content.ReadFromJsonAsync<Usuario>();
+
+                //Guardamos el usuario autenticado
+                UserSession.UsuarioActual = json;
+
                 Mensaje = $"Bienvenido, {json.User} ({json.Rol})";
 
                 string route = string.Empty;
@@ -64,7 +69,7 @@ public class LoginViewModel : INotifyPropertyChanged
                         route = $"//{nameof(AdminModule)}";
                         break;
                     case "cajero":
-                        route= $"//{nameof(CashierModule)}";
+                        route = $"//{nameof(CashierModule)}";
                         break;
                     case "farmaceutico":
                         route = $"//{nameof(FarmaceuticModule)}";
@@ -73,10 +78,10 @@ public class LoginViewModel : INotifyPropertyChanged
                         Mensaje = "Rol no reconocido.";
                         return;
                 }
+
                 if (!string.IsNullOrEmpty(route))
                 {
-                    // Reinicia la pila de navegación para que el usuario no pueda volver al login con el botón Atrás
-                    await Shell.Current.GoToAsync(route, true); // 'true' para reemplazar la pila
+                    await Shell.Current.GoToAsync(route, true);
                     Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
                 }
             }
@@ -87,9 +92,9 @@ public class LoginViewModel : INotifyPropertyChanged
         }
         catch (Exception ex)
         {
-            if(ex.Message.Contains("localhost") || ex.Message.Contains("connection refused"))
+            if (ex.Message.Contains("localhost") || ex.Message.Contains("connection refused"))
             {
-                Mensaje = "Error de conexión: Asegurate que el servidor esté en ejecución.";
+                Mensaje = "Error de conexión: Asegúrate de que el servidor esté en ejecución.";
             }
             else
             {
