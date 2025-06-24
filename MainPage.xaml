@@ -32,13 +32,10 @@
                 <ScrollView Grid.Row="1">
                     <VerticalStackLayout>
                     <!-- Vistas de modulos -->
-<<<<<<< HEAD
                         <Views:AdminModule Margin="0, 125, 0, 0"/>
                         <!-- Vistas de modulos -->
-=======
-                    <!--Views:LoginModule Margin="0, 125, 0, 0"/-->
+                    <Views:LoginModule Margin="0, 125, 0, 0"/>
                     <!-- Vistas de modulos -->
->>>>>>> ff79cf990fa85b39f2d6a591e469cf2ab2401bd1
                     </VerticalStackLayout>
                 </ScrollView>
             </Grid>
